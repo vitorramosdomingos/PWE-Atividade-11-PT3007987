@@ -1,0 +1,66 @@
+
+#menu_background {
+  background-color: green;
+  
+}
+
+div#menu_background ul {
+  list-style-type: none;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+div#menu_background li {
+  float:left;
+}
+
+div#menu_background li#sobre {
+  float:right;
+}
+
+div#menu_background li a, .drop {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div#menu_background li a:hover, .dropli:hover .drop {
+  background-color: red;
+}
+
+div#menu_background li.dropli {
+  display: inline-block;
+}
+
+div#menu_background .drop_cont {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+div#menu_background .drop_cont a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+div#menu_background .drop_cont a:hover {
+  background-color: #f1f1f1;
+}
+
+div#menu_background .dropli:hover .drop_cont {
+  display: block;
+}
+
+
+
+

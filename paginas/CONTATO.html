@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contatos</title>
+    <link rel="favicon" charset="favicon.ico" />
+    <link href= "../style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+    <object width="100%" height="200px" data="../componentes/menu.html"></object>
+  </nav>
+
+    </header>
+    
+    <main>
+      <section>
+        <h1 class="titulo">Mande uma mensagem</h1>
+        <form>
+          <ul>
+            <li>
+              <label for = "nome_contato">Nome</label>
+              <input class="caixa" required name="nome_contato"></li>
+            <li>E-mail
+              <label for = "email_contato" >
+              <input class="caixa" required type="email" name="email_contato">
+            </li>
+            <li>Telefone
+              <label for = "telefone_contato"><span>(99) 99999-9999</span> <br>
+              <input class="caixa" required name="telefone_contato"> </li>
+            <li>
+              <label for = "assunto_contato">Assunto</label>
+              <select class="caixa" required name="assunto_contato">
+              <option selected disabled value>-- Selecione --</option>
+              <option>Reclamação</option> 
+              <option>Sugestão</option>
+              
+              </select>
+              
+            </li>
+            <li><label for="mensagem">Mensagem</label> <br>
+              
+              <textarea class="caixa" required name="mensagem"></textarea>
+            
+            </li>
+            <li>
+                
+                  <fieldset><legend>Opções de resposta</legend>
+                  <label for = "check"></label>
+                    Email<input  type="checkbox" name="check" value="email_check">
+                    Telefone<input  type="checkbox" name="check" value="telefone_check">
+                  
+                  </fieldset>
+                
+              
+            </li>
+            
+            <input class="button" type="submit"></input>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <br>
+      <br>
+      <nav>
+        <object width="100%"  data="../footer.html"> </object>
+      </nav>
+    </footer>
+  </body>
+</html>
